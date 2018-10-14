@@ -10,7 +10,7 @@ Preprocessing from BIDS (included in code):
 - cut off first 10 timepoints
 - apply mask, center
 - average over all voxels
-- For aesthetics: add a little random noise to distributions (mostly visible in tails) and left out 2 sessions with ugly peaky distributions.
+- For aesthetics: add a little random noise to distributions (mostly visible in tails), smoothed and left out 2 sessions with ugly peaky distributions.
 
 *Dependencies:* singularity + [singularity container for fmriprep-1.1.5](https://hub.docker.com/r/poldracklab/fmriprep/tags/)
 
