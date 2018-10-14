@@ -14,7 +14,7 @@ module load singularity/2.6.0
 
 # define constants
 export IMAGE=/share/PI/russpold/singularity_images/poldracklab_fmriprep_1.1.5-2018-09-07-1bd26e6330e0.img
-export BASEDIR=/scratch/users/jdurnez/myconnectome/
+export BASEDIR=/scratch/users/jdurnez/myconnectome/ # bids directory with myconnectome data
 export SCRIPTLOC=/home/users/jdurnez/myconnectome/unknownpleasures_extract.py
 
 export PYTHONPATH=""
