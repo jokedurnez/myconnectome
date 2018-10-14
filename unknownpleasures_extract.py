@@ -36,6 +36,9 @@ for index,session in enumerate(prepsessions):
     infile = os.path.join(funcdir,'%s_preproc.nii.gz'%key)
     maskfile = os.path.join(funcdir,'%s_brainmask.nii.gz'%key)
     outfile = os.path.join(funcdir,"%s_preproc_removed_first10.nii.gz"%key)
+    if not os.path.exists(infile) or not os.path.exists(maskfile):
+        logger("Can't find nifti or mask for session %s"%session)
+        continue
 
     # cut of first 10 timepoints
     logger('Cutting off first timepoints...')
